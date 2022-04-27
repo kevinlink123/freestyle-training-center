@@ -3,6 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { initializeApp } from 'firebase/app';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyD3CaPaLVdhOc2iC2pALf4yBPRKpRqv2cY",
+  authDomain: "freestyle-training-center.firebaseapp.com",
+  projectId: "freestyle-training-center",
+  storageBucket: "freestyle-training-center.appspot.com",
+  messagingSenderId: "203586530938",
+  appId: "1:203586530938:web:58fb40fb031484a28715c3"
+};
+initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
